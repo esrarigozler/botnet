@@ -25,11 +25,11 @@ def get_command():
 def execute_command(command):
     if command == "system_info":
         info = {
-            "os": platform.system(),      # DÜZELTİLDİ: parantez eklendi
-            "release": platform.release(), # DÜZELTİLDİ
-            "version": platform.version(), # DÜZELTİLDİ
-            "machine": platform.machine(), # DÜZELTİLDİ
-            "processor": platform.processor() # DÜZELTİLDİ
+            "os": platform.system(),      
+            "release": platform.release(), 
+            "version": platform.version(), 
+            "machine": platform.machine(), 
+            "processor": platform.processor() 
         }
         print(f"Sistem Bilgisi: {json.dumps(info, indent=2)}")
     elif command == "ping":
